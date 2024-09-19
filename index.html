@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1> <center>Image Gallery By Alishba</center></h1>
+    <div class="image gallery">
+
+        <img src="images/historical place 8.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 9.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 10.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 11.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 12.jpg" onclick="openFullImg(this.src)" >
+        <img src="images/historical place 13.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 15.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 16.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 17.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 18.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 19.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 20.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 21.jpg" onclick="openFullImg(this.src)">
+        <img src="images/historical place 22.jpg" onclick="openFullImg(this.src)">
+        <img src="download historical.jpg"onclick="openFullImg(this.src)">
+    </div>
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    
+    function openFullImg(pic){
+        fullImgBox.style.display ="flex";
+        fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display= "none";
+    }
+</script>
+
+
+</body>
+</html>
